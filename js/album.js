@@ -12,9 +12,12 @@ function renderAlbums(albums){
             <a href="${a.path}" class="album-card">
                 <div class="album-cover">
                     <img src="${a.cover}" alt="Meme collection">
+                    
+                </div>
+                <div class="album-cover-meta">
                     <div class="photo-by">
-                Eorzean Photography • ${a.coverBy}
-            </div>
+                        📷 ${a.coverBy}
+                    </div>
                 </div>
                 <div class="album-info">
                     <h3>${a.name}</h3>
