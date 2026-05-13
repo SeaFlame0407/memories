@@ -59,8 +59,8 @@ function renderTable(){
     list.forEach(item=>{
         const tr = document.createElement("tr");
         tr.innerHTML = `
-            <td>${item.day}</td>
-            <td>${item.name}</td>
+            <td>${item.date}</td>
+            <td>${item.title}</td>
             <td>${item.note}</td>
         `;
         tableBody.appendChild(tr);
