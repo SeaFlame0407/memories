@@ -1,17 +1,15 @@
-const data = {
-    2025: {
-        12: [
-            {day:"12-01", name:"Raid Night", note:"滅團 32 次"},
-            {day:"12-08", name:"漁師活動", note:"釣魚發呆"}
-        ]
-    },
-    2026: {
-        1: [
-            {day:"01-05", name:"零式開荒", note:"補師崩潰"},
-            {day:"01-20", name:"Meme Night", note:"全員發病"}
-        ]
-    }
-};
+let data = {};
+
+fetch("../data/activities.json")
+    .then(res => res.json())
+    .then(json => {
+        data = json;
+        init();
+    });
+
+function init(){
+    renderAll();
+}
 
 let selectedYear = "2026";
 let selectedMonth = "1";
