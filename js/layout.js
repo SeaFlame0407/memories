@@ -5,6 +5,3 @@ function loadComponent(id, file){
             document.getElementById(id).innerHTML = html;
         });
 }
-
-loadComponent("header", "layout/header.html");
-loadComponent("footer", "layout/footer.html");
