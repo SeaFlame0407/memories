@@ -16,7 +16,7 @@ function renderAlbums(albums){
                 </div>
                 <div class="album-cover-meta">
                     <div class="photo-by">
-                        📷 ${a.coverBy}
+                        Eorzean Photography • ${a.coverBy}
                     </div>
                 </div>
                 <div class="album-info">
