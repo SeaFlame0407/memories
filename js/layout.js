@@ -6,5 +6,5 @@ function loadComponent(id, file){
         });
 }
 
-loadComponent("header", "/layout/header.html");
-loadComponent("footer", "/layout/footer.html");
+loadComponent("header", "../layout/header.html");
+loadComponent("footer", "../layout/footer.html");
