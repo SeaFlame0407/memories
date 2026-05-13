@@ -1,0 +1,69 @@
+.album-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+        }
+
+        .album-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: block;
+        }
+
+        /* 滑鼠移上去的浮起與變色效果 */
+        .album-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.12);
+            border-color: #7dd3fc;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 15px rgba(125, 211, 252, 0.2);
+        }
+
+        .album-cover {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            background: #1e293b; /* 預設底色 */
+        }
+
+        .album-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .album-card:hover .album-cover img {
+            transform: scale(1.1); /* 圖片輕微放大 */
+        }
+
+        .album-info {
+            padding: 20px;
+        }
+
+        .album-info h3 {
+            font-size: 1.4rem;
+            color: #7dd3fc;
+            margin-bottom: 8px;
+        }
+
+        .album-info p {
+            font-size: 0.95rem;
+            color: #d6e2ff;
+            line-height: 1.5;
+            opacity: 0.8;
+        }
+
+        .album-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
