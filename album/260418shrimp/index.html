@@ -5,8 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>冒險相簿 - 揪本團活動紀錄</title>
 
-    <link rel="stylesheet" href="../style/main.css">
-   <link rel="stylesheet" href="../style/album.css">
+    <link rel="stylesheet" href="../../style/main.css">
+   <link rel="stylesheet" href="../../style/album.css">
+    <style>.story{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.story h2{
+    font-size:28px;
+    margin-bottom:20px;
+    color:#7dd3fc;
+}
+
+.story p{
+    margin-bottom:16px;
+    color:#e5e7eb;
+}
+
+.img-row{
+    display:flex;
+    gap:10px;
+    margin:20px 0;
+}
+
+.img-row img{
+    width:50%;
+    border-radius:12px;
+    object-fit:cover;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.ending{
+    margin-top:30px;
+    font-weight:bold;
+    font-size:18px;
+    color:#fbbf24;
+    text-align:center;
+}</style>
 </head>
 
 <body>
@@ -18,7 +55,49 @@
             <h2 class="section-title" style="text-align: left; margin-bottom: 10px;">釣蝦幫的誕生</h2>
             <p style="color: #94a3b8;">20260418</p>
         </div>
+<div class="story">
 
+    <h2>🦐 蝦捕蝦捕航行紀錄 🦐</h2>
+
+    <p>
+        那是一個風和日麗的午後，大家正哀號著裝潢格數不夠這件事，
+        溪口突然提問：「有人對蝦捕蝦捕這個稱號有興趣嗎？」
+    </p>
+
+    <p>
+        一開始當然是一堆人根本不知道那是什麼，
+        在溪口一番解說下，正式開啟了這次的航行。
+    </p>
+
+    <p>
+        也不知道怎麼就鬼轉成台客服裝瞎趴上船，
+        集合時間還在海都打群架拍合照，甚至嚇到路人。
+    </p>
+
+    <!-- 圖片區塊 -->
+    <div class="img-row">
+        <img src="/20260418_2.png" alt="shrimp photo 2">
+        <img src="/20260418_3.png" alt="shrimp photo 3">
+    </div>
+
+    <p>
+        原本預計是 24 人一起上船，但遠洋無法開團隊，
+        吉田啊讓我們團隊 24 人出門啊！
+    </p>
+
+    <p>
+        最後變成拆成三組 8 人，
+        原本以為可以一起撞上同艘船，最後卻被硬生生拆散（無緣）。
+    </p>
+
+    <p>
+        蝦捕蝦捕不是一條簡單的路，有些人差一點，有些人差很多點(?)，
+        下船後大家只好一起到熱炒店喝酒解悶，相約下次再一起搭船。
+    </p>
+
+    <p class="ending">
+        兄弟 17 一輩子。
+    </p>
         </div>
     </section>
 
@@ -26,8 +105,8 @@
 
     <script src="../js/layout.js"></script>
     <script>
-        loadComponent("header", "../layout/header.html");
-        loadComponent("footer", "../layout/footer.html");
+        loadComponent("header", "../../layout/header.html");
+        loadComponent("footer", "../../layout/footer.html");
     </script>
 </body>
 </html>
