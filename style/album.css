@@ -59,11 +59,35 @@
             opacity: 0.8;
         }
 
-        .album-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 15px;
-            font-size: 0.8rem;
-            color: #94a3b8;
-        }
+.album-cover{
+    position:relative;
+    overflow:hidden;
+    border-radius:16px;
+}
+
+.album-cover img{
+    width:100%;
+    display:block;
+    aspect-ratio:16/9;
+    object-fit:cover;
+}
+
+/* 攝影者標記 */
+.photo-by{
+    position:absolute;
+    right:12px;
+    bottom:10px;
+
+    padding:4px 10px;
+
+    font-size:12px;
+    color:rgba(255,255,255,0.85);
+
+    background:rgba(0,0,0,0.45);
+
+    backdrop-filter:blur(6px);
+
+    border-radius:999px;
+
+    letter-spacing:0.5px;
+}
