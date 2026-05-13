@@ -1,0 +1,33 @@
+.pills{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+.pill{
+    padding:10px 18px;
+    border-radius:999px;
+    background:rgba(255,255,255,0.08);
+    cursor:pointer;
+}
+
+.pill:hover{
+    background:#38bdf8;
+    color:black;
+}
+
+.active{
+    background:#38bdf8;
+    color:black;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th, td{
+    padding:10px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
