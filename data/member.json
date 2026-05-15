@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Rein",
+    "job": "坦克",
+    "avatar": "https://i.pravatar.cc/150?img=12",
+    "role": "隊長",
+    "desc": "專門拉怪跟滅團"
+  },
+  {
+    "name": "Mika",
+    "job": "補師",
+    "avatar": "https://i.pravatar.cc/150?img=32",
+    "role": "核心支援",
+    "desc": "救不回來也要救"
+  }
+]
