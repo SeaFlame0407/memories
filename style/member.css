@@ -1,0 +1,67 @@
+.member-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:24px;
+}
+
+/* 卡片 */
+.member-card{
+    display:flex;
+    gap:16px;
+    padding:20px;
+    border-radius:18px;
+
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+
+    transition:.25s;
+    position:relative;
+    overflow:hidden;
+}
+
+.member-card:hover{
+    transform:translateY(-6px);
+    background:rgba(255,255,255,0.10);
+}
+
+/* 左邊頭像 */
+.member-avatar img{
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid #7dd3fc;
+}
+
+/* 右邊資訊 */
+.member-info h3{
+    margin:0;
+    font-size:18px;
+    color:#7dd3fc;
+}
+
+/* 標籤 */
+.badge{
+    display:inline-block;
+    margin-top:6px;
+    margin-right:6px;
+    padding:4px 10px;
+    font-size:12px;
+    border-radius:999px;
+    background:rgba(56,189,248,0.15);
+    color:#7dd3fc;
+}
+
+.badge.role{
+    background:rgba(255,255,255,0.08);
+    color:#dbeafe;
+}
+
+/* 描述 */
+.member-info p{
+    margin-top:10px;
+    font-size:13px;
+    color:#bcd0ff;
+    line-height:1.6;
+}
